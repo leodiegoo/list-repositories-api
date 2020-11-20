@@ -1,5 +1,8 @@
 import app from './app';
+import 'dotenv/config';
 
-app.listen(5555, () => {
-  console.log('🏃‍♂️️ on port 5555!');
+const port = process.env.PORT;
+
+app.listen(port, () => {
+  console.log(`🏃‍♂️️ on port ${port}!`);
 });
